@@ -1,2 +1,2 @@
 # web-sapphire
-todo jeweler web repository
+todo-jeweler web repository
