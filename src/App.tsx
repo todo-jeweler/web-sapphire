@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { useRecoilState } from "recoil";
-import { todoState } from "src/state/todo/todo";
+import { useEffect } from 'react'
+import { useRecoilState } from 'recoil'
+import { todoState } from 'src/state/todo/todo'
 
 const App = () => {
-  const [todo, setTodo] = useRecoilState(todoState);
+  const [todo, setTodo] = useRecoilState(todoState)
 
   useEffect(() => {
     setInterval(() => {
-      setTodo((prev) => prev + "헉!");
-    }, 1000);
-  }, []);
+      setTodo((prev) => prev + '헉z!')
+    }, 1000)
+  }, [])
 
-  return <>Hello Recoil, {todo}</>;
-};
+  return <>Hello Recoil, {todo}</>
+}
 
-export default App;
+export default App
